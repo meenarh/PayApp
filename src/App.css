@@ -19,10 +19,6 @@ main h3{
   overflow: hidden;
 }
 
-main button{
-  border-radius: 5px;
-}
-
 .product img{
   width: 350px;
 }

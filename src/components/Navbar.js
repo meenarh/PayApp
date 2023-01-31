@@ -1,5 +1,6 @@
 import React from 'react'
 import shop from '../assets/images/shopping-bag.png'
+// import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
