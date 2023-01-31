@@ -28,3 +28,71 @@ main h3{
   height: 60px;
   border-radius: 10px;
 }
+
+
+label{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #3D3939;
+}
+
+label > p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #817E9E;
+}
+
+input, select{
+  width: 500px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #3D3939;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+input::placeholder{
+  padding: 10px;
+  font-family: 'Product Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons{
+  text-align: left;
+  margin-top: 40px;
+}
+
+button.submit{
+  background: #3D3939;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #3D3939;
+  color: #FFFFFF;
+}
+
+button.cancel{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #3D3939;
+  margin-left: 40px;
+  background: #ffffff;
+  border: 0;
+}
