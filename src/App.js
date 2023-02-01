@@ -1,17 +1,7 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Layout from "./components/Layout/Layout";
 
 function App() {
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/product" element={<div>Product</div>} />
-      <Route path="*" element={<div>Not Found</div>} />
-     </Routes>
-    </BrowserRouter>
-  );
+  return <Layout />;
 }
 
 export default App;
