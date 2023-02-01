@@ -40,7 +40,7 @@ const Login = () => {
                   Login
                 </button>
               </form>
-              <Link to="/register">
+              <Link className="create" to="/register">
                 Don't have an account? Create an account
               </Link>
             </Col>
