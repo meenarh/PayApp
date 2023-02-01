@@ -15,7 +15,6 @@ const Checkout = () => {
   const [enterCountry, setEnterCountry] = useState("");
   const [enterCity, setEnterCity] = useState("");
   const [postalCode, setPostalCode] = useState("");
-
   const shippingInfo = [];
   const cartTotalAmount = useSelector((state) => state.cart.totalAmount);
   const shippingCost = 30;
@@ -23,12 +22,11 @@ const Checkout = () => {
   const totalAmount = cartTotalAmount + Number(shippingCost);
 
   const componentProps = {
-    enterName,
-    cartTotalAmount,
+    email: enterEmail,
+    amount: totalAmount,
     metadata: {
-      enterName,
-      enterNumber,
-      enterCountry,
+      name: enterName,
+      phone: enterNumber,
     },
     publicKey,
     text: 'Buy Now',
@@ -121,8 +119,9 @@ const Checkout = () => {
                 {/* <button type="submit" className="addTOCart__btn">
                   Payment
                 </button> */}
-                <PaystackButton className="addTOCart__btn" {...componentProps} />
+                
               </form>
+              <PaystackButton className="addTOCart__btn" {...componentProps} />
             </Col>
 
             <Col lg="4" md="6">
