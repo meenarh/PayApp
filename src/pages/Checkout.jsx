@@ -8,7 +8,7 @@ import Helmet from "../components/Helmet/Helmet";
 import "../styles/checkout.css";
 
 const Checkout = () => {
-  const publicKey = "pk_test_49d04b8926b095c0450f03fc0f3628b042b5d680";
+  const publicKey = "pk_test_977618ce10970db7d7943c24ddd58acd4de40afb";
   const [enterName, setEnterName] = useState("");
   const [enterEmail, setEnterEmail] = useState("");
   const [enterNumber, setEnterNumber] = useState("");
@@ -127,14 +127,14 @@ const Checkout = () => {
             <Col lg="4" md="6">
               <div className="checkout__bill">
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Subtotal: <span>${cartTotalAmount}</span>
+                  Subtotal: <span>₦{cartTotalAmount}</span>
                 </h6>
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Shipping: <span>${shippingCost}</span>
+                  Shipping: <span>₦{shippingCost}</span>
                 </h6>
                 <div className="checkout__total">
                   <h5 className="d-flex align-items-center justify-content-between">
-                    Total: <span>${totalAmount}</span>
+                    Total: <span>₦{totalAmount}</span>
                   </h5>
                 </div>
               </div>

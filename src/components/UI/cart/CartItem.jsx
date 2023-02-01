@@ -39,21 +39,21 @@ const CartItem = ({ item }) => {
           <div>
             <h6 className="cart__product-title">{title}</h6>
             <p className=" d-flex align-items-center gap-5 cart__product-price">
-              {quantity}x <span>${totalPrice}</span>
+              {quantity}x <span>₦{totalPrice}</span>
             </p>
             <div className=" d-flex align-items-center justify-content-between increase__decrease-btn">
               <span className="increase__btn" onClick={incrementItem}>
-                <i className="ri-add-line"></i>
+                <i class="ri-add-line"></i>
               </span>
               <span className="quantity">{quantity}</span>
               <span className="decrease__btn" onClick={decreaseItem}>
-                <i className="ri-subtract-line"></i>
+                <i class="ri-subtract-line"></i>
               </span>
             </div>
           </div>
 
           <span className="delete__btn" onClick={deleteItem}>
-            <i className="ri-close-line"></i>
+            <i class="ri-close-line"></i>
           </span>
         </div>
       </div>
