@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="newsletter">
               <input type="email" placeholder="Enter your email" />
               <span>
-                <i class="ri-send-plane-line"></i>
+                <i className="ri-send-plane-line"></i>
               </span>
             </div>
           </Col>
@@ -68,7 +68,7 @@ const Footer = () => {
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              Copyright - 2022, All Rights
+              Copyright - 2023, All Rights
               Reserved.
             </p>
           </Col>
@@ -78,21 +78,21 @@ const Footer = () => {
               <span>
                 {" "}
                 <Link to="/">
-                  <i class="ri-facebook-line"></i>
+                  <i className="ri-facebook-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
                 {" "}
                 <Link to="/">
-                  <i class="ri-youtube-line"></i>
+                  <i className="ri-youtube-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
                 {" "}
                 <Link to="/">
-                  <i class="ri-linkedin-line"></i>
+                  <i className="ri-linkedin-line"></i>
                 </Link>{" "}
               </span>
             </div>
